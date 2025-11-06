@@ -44,4 +44,19 @@ fun DataApp(
         }
     }
 }
-        }
+
+@Composable
+fun TampilData(onBackBtnClick: () -> Unit) {
+    TODO("Not yet implemented")
+}
+
+@Composable
+fun FormIsian(OnSubmitBtnClick: () -> Unit) {
+    TODO("Not yet implemented")
+}
+
+private fun cancelAndBackToFormulir(
+    navController: NavHostController
+) {
+    navController.popBackStack(route = Navigasi.Formulir.name, inclusive = false)
+}
